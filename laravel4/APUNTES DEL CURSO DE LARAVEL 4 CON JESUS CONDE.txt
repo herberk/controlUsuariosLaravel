@@ -1,0 +1,24 @@
+APUNTES DEL CURSO DE LARAVEL 4 CON JESUS CONDE
+-crear repositorio
+-composer install
+-php artisan serve 		-localhost:8000
+-php artisan key:generate
+-crear base de datos
+-modificar app.php
+-php artisan migrate:make create_users_table --table=users --create  (se creo una migracion a la tabla usuarios jeje)
+	--se crearon los archivos en la carpeta "migrations" el siguiente paso será poner el codigo que se va a ejecutar osear crear los campos de cada tabla para luego correr el script como migracion
+--Se creo el UserTableSeeder y se descomento la linea en DatabaseSeeder
+--php artisan migrate (para ejecutar las migraciones con el codigo)
+--php artisan db:seed (para correr el UserTableSeeder)
+
+
+
+
+
+
+CODIGOS MUY USADOS
+MIGRACIONES
+		php artisan migrate:install
+		php artisan migrate:make create_users_table
+		php artisan migrate //crear tablas
+		php artisan migrate:rollback //eliminar

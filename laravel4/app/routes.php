@@ -15,3 +15,13 @@ Route::get('/', function()
 {
 	return View::make('hello');
 });
+
+Route::get('users', function()
+{
+	return View::make('users');
+});
+
+Route::get('/authtest',array('before' => 'auth.basic', function()
+{
+	return View::make('hello');
+}));
